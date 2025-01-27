@@ -1,1 +1,0 @@
-# aquecimento_2025
