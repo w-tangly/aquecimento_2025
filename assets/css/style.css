@@ -6,12 +6,13 @@
     padding: 0;
     box-sizing: border-box;
     font-family: Poppins;
-    overflow-x: hidden;
+    /* overflow-x: hidden; */
 }
 
 main{
     margin: 9rem 0 0 0;
 }
+
 .hero{
     display: flex;
     flex-direction: row;
@@ -47,15 +48,15 @@ main{
 
 .midtitle{
     font-size: 48px;
-    font-family: Abril Fatface;
+    font-family: SUSE;
     margin: 3rem;
     text-align: center;
-    color: var(--black);
 }
 
 .grid{
-    display: flex;
-    grid-template-columns: 3, 1fr;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
     margin-bottom: 3rem;
 }
 
@@ -66,25 +67,60 @@ main{
     align-items: center;
     width: 430px;
     height: 340px;
-    background-color: #fff;
     margin: 3rem;
     box-shadow: 2.5px 2.5px 5px rgba(0, 0, 0, .2);
-    border-radius: 8px;
+    border-radius: 18px;
 }
 
 .subdesc{
     font-size: 18px;
     text-align: center;
-    font-family: Nova Slim;
     margin: 1rem;
     margin-bottom: 1rem;
-    color: var(--black);
 }
 
 .subtitle{
     font-size: 24px;
     font-weight: bold;
     margin: .5rem;
-    font-family: Nova Slim;
-    color: var(--black);
+    text-align: center;
+}
+
+footer{
+    background-color: #D3D3D3;
+    align-items: center;
+    justify-content: center;
+}
+
+.flex{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+}
+
+.fontes{
+    display: flex;
+    flex-direction: column;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+a:hover{
+    color: white;
+}
+
+.flex img{
+    width:15vw;
+    height: auto;
+}
+
+.fontestitle{
+    font-family: SUSE;
+    font-weight: bold;
+    font-size: 3rem;
 }
